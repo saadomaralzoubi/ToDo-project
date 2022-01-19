@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/about.css" />
     <style>
       img {
         width: 200px;
@@ -15,32 +15,44 @@
   <body>
     <header>
       <img src="assets/logo.png" alt="logo" />
-
-      <h1>ToDO website</h1>
       <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="About.html">About</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
       </nav>
+      <h1>ToDO website</h1>
     </header>
     <main>
-      <img src="imeges/saad.jpg" alt="logo" />
+      <div class="main-cont">
+        <div class="user-info">
+          <img src="imeges/saad.jpg" alt="logo" />
+          <p class="name">SAAD OMAR ALZOUBI</p>
+          <p class="desc">im a web development student at ASAC</p>
+        </div>
+        <div class="form">
+          <h3>Contact Us</h3>
+          <div>
+            <label>Full Name</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" />
+          </div>
+          <div>
+            <label>Phone</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label>Message</label>
 
-      <p>NAME:SAAD OMAR ALZOUBI</p>
-      <p>ABOUT ME: im a web development student at ASAC</p>
-    </div>
-    <div class="form">
-      <label>NAME</label>
-      <input type="text" /><br />
-      <label>EMAIL</label>
-      <input type="email" /><br />
-      <br />
-      <label>descriptoin</label>
-      <input type="text" />
-    </main>>
+            <textarea></textarea>
+          </div>
+          <div><input type="button" value="Send" /></div>
+        </div>
+      </div>
+    </main>
     <footer>
-      <p>&copy; 2022 SAAD ALZOUBI all rights reserved</p>
+      <p>&copy; 2022 ASAC all rights reserved</p>
     </footer>
   </body>
 </html>
