@@ -22,19 +22,30 @@ if (welcomMessage === false && gender.toLocaleLowerCase() === "female") {
 } else {
 }
 
-let note = prompt("do like to get notifications?");
-if (note == "") {
-  note = "invalid";
-}
-let web = prompt("do like our website?");
-if (web == "") {
-  web = "invalid";
-}
-let share = prompt("do like to share our website with your friends?");
-if (share == "") {
-  share = "invalid";
+// let note = prompt("do like to get notifications?");
+// if (note == "") {
+//   note = "invalid";
+// }
+// let web = prompt("do like our website?");
+// if (web == "") {
+//   web = "invalid";
+// }
+// let share = prompt("do like to share our website with your friends?");
+// if (share == "") {
+//   share = "invalid";
+// }
+
+function ask(question) {
+  let answer = prompt(question);
+  if (answer == "yes" || answer == "no") return answer;
+  else if (answer == "") {
+    return "invalid";
+  }
 }
 
+let note = ask("do like to get notifications?");
+let web = ask("do like our website?");
+let share = ask("do like to share our website with your friends?");
 answersArray = [note, web, share];
 
 for (let i = 0; i < answersArray.length; i++) {
